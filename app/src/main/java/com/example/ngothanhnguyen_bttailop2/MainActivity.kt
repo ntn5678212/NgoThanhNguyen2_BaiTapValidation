@@ -242,5 +242,35 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
+        // 8. CHUYỂN DỮ LIỆU QUA DETAIL ACTIVITY
+        val intent = Intent(this, DetailActivity::class.java).apply {
+
+            putExtra(
+                "NAME",
+                binding.edtName.text.toString().trim()
+            )
+
+            putExtra(
+                "EMAIL",
+                binding.edtEmail.text.toString().trim()
+            )
+
+            putExtra(
+                "PHONE",
+                binding.edtPhone.text.toString().trim()
+            )
+
+            putExtra(
+                "STUDENT_ID",
+                binding.edtStudentId.text.toString().trim()
+            )
+
+            putExtra(
+                "CLASS",
+                binding.edtClass.text.toString().trim()
+            )
+        }
+
+        startActivity(intent)
     }
 }

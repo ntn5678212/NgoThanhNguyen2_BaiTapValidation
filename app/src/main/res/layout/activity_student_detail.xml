@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ THÀNH CÔNG"
+            android:textColor="#10B981"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:textColor="#AFC0D5"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/DetailValue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#AFC0D5"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/DetailValue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textColor="#AFC0D5"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            style="@style/DetailValue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã sinh viên"
+            android:textColor="#AFC0D5"/>
+
+        <TextView
+            android:id="@+id/tvStudentId"
+            style="@style/DetailValue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lớp"
+            android:textColor="#AFC0D5"/>
+
+        <TextView
+            android:id="@+id/tvClass"
+            style="@style/DetailValue"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="QUAY LẠI ĐĂNG KÝ"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#10B981"/>
+
+    </LinearLayout>
+</ScrollView>
