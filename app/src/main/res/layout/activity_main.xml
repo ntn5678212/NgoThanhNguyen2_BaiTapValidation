@@ -1,19 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true"
+    android:background="@drawable/bg_screen">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="22dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ĐĂNG KÝ SINH VIÊN"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="Vui lòng nhập thông tin của bạn"
+                android:textColor="#AFC0D5"
+                android:textSize="13sp"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="HỌ VÀ TÊN"/>
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/FormInput"
+                android:hint="Nguyễn Văn A"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="60"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="EMAIL"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/FormInput"
+                android:hint="example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:maxLength="254"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="SỐ ĐIỆN THOẠI"/>
+
+            <EditText
+                android:id="@+id/edtPhone"
+                style="@style/FormInput"
+                android:hint="0912345678"
+                android:inputType="phone"
+                android:maxLength="10"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="MÃ SINH VIÊN"/>
+
+            <EditText
+                android:id="@+id/edtStudentId"
+                style="@style/FormInput"
+                android:hint="2415053122330"
+                android:inputType="number"
+                android:maxLength="15"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="LỚP SINH HOẠT"/>
+
+            <EditText
+                android:id="@+id/edtClass"
+                style="@style/FormInput"
+                android:hint="126TLTTD04"
+                android:inputType="textCapCharacters"
+                android:maxLength="30"
+                android:imeOptions="actionDone"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@null"
+                android:text="ĐĂNG KÝ NGAY"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Thông tin được kiểm tra trước khi đăng ký"
+                android:textSize="12sp"
+                android:textColor="#9DAEC4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
